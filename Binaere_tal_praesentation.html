@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8"/>
+<title>Binære tal</title>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/night.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h2>Binære tal</h2><h3></h3><h4></h4><h4></h4>
+</section>
+
+<section>
+<section id="slide-org7d3a64f" data-background="">
+<h2 id="org7d3a64f">Giver det mening?</h2>
+<blockquote>
+<p>
+Der findes 10 slags mennesker. Dem, der forstår binære tal, og dem, som ikke gør.
+</p>
+</blockquote>
+
+<ul>
+<li class="fragment appear">Giver citatet mening?</li>
+<li class="fragment appear">Hvad er der galt?</li>
+<li class="fragment appear">Diskutér det med din sidemakker.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org72c22a0" data-background="">
+<h2 id="org72c22a0">Giver det mening? - For de indviede</h2>
+<blockquote>
+<p>
+Der findes 10 slags mennesker. Dem, der forstår binære tal, dem, der ikke gør og dem, som også forstår trinære tal.
+</p>
+</blockquote>
+
+<ul>
+<li class="fragment appear">Giver citatet mening?</li>
+<li class="fragment appear">Hvad er der galt?</li>
+<li class="fragment appear">Diskutér det med din sidemakker.</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgfc6d974" data-background="">
+<h2 id="orgfc6d974">Decimaltal (tital) vs binære tal</h2>
+<div style="font-size: 60%;">
+<div style="display: grid; grid-template-columns: 50% auto;">
+<div>
+<p>
+<b>Decimaltal</b>
+</p>
+
+<p>
+Ti forskellige cifre:
+</p>
+
+<p>
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">10<sup>3</sup></td>
+<td class="org-left">10<sup>2</sup></td>
+<td class="org-left">10<sup>1</sup></td>
+<td class="org-left">10<sup>0</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">1000</td>
+<td class="org-left">100</td>
+<td class="org-left">10</td>
+<td class="org-left">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<p>
+<b>Binære tal</b>
+</p>
+
+<p>
+To forskellige cifre:
+</p>
+
+<p>
+0, 1
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>9</sup></td>
+<td class="org-left">2<sup>8</sup></td>
+<td class="org-left">2<sup>7</sup></td>
+<td class="org-left">2<sup>6</sup></td>
+<td class="org-left">2<sup>5</sup></td>
+<td class="org-left">2<sup>4</sup></td>
+<td class="org-left">2<sup>3</sup></td>
+<td class="org-left">2<sup>2</sup></td>
+<td class="org-left">2<sup>1</sup></td>
+<td class="org-left">2<sup>0</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">512</td>
+<td class="org-left">256</td>
+<td class="org-left">128</td>
+<td class="org-left">64</td>
+<td class="org-left">32</td>
+<td class="org-left">16</td>
+<td class="org-left">8</td>
+<td class="org-left">4</td>
+<td class="org-left">2</td>
+<td class="org-left">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<p class="fragment (appear)">
+Lad os skrive nogle tal op!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org435ddad" data-background="">
+<h2 id="org435ddad">Happy birthday!</h2>
+<div style="font-size: 70%;">
+<p>
+Skriv jeres fødselsdato med binære tal&#x2026; Ja, I skal skrive hele fødselsåret :)
+</p>
+
+<div style="font-size: 70%;">
+<p>
+Brug en tabel ligesom sidst
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>10</sup></td>
+<td class="org-left">2<sup>9</sup></td>
+<td class="org-left">2<sup>8</sup></td>
+<td class="org-left">2<sup>7</sup></td>
+<td class="org-left">2<sup>6</sup></td>
+<td class="org-left">2<sup>5</sup></td>
+<td class="org-left">2<sup>4</sup></td>
+<td class="org-left">2<sup>3</sup></td>
+<td class="org-left">2<sup>2</sup></td>
+<td class="org-left">2<sup>1</sup></td>
+<td class="org-left">2<sup>0</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">1024</td>
+<td class="org-left">512</td>
+<td class="org-left">256</td>
+<td class="org-left">128</td>
+<td class="org-left">64</td>
+<td class="org-left">32</td>
+<td class="org-left">16</td>
+<td class="org-left">8</td>
+<td class="org-left">4</td>
+<td class="org-left">2</td>
+<td class="org-left">1</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Eller en <b>algoritme</b>
+</p>
+
+<ol>
+<li><p>
+Dividér jeres decimaltal med 2 og skriv <b>kvotienten</b> og <b>resten</b> ned.
+</p>
+
+<p>
+Resten er enten 0 eller 1.
+</p></li>
+
+<li>Dividér nu kvotienten fra forrige skridt med 2 og skriv den nye kvotient og <b>resten</b> ned igen. Skriv den nye rest <b>til venstre</b> for den gamle rest.</li>
+
+<li>Gentag de to første skridt indtil I har en ny kvotient på 0.</li>
+
+<li>Resterner er nu jeres decimaltal skrevet med binære tal. Husk at have den <b>første</b> rest længst til <b>højre</b> og den <b>sidste</b> rest længst til <b>venstre</b>.</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orge354281" data-background="">
+<h2 id="orge354281">Lad os tælle</h2>
+<div style="font-size: 80%;">
+<div style="display: grid; grid-template-columns: auto auto;">
+<div>
+<ul>
+<li>Hvor stort et tal kan I tælle til på én hånd?&#x2026; eller to?</li>
+
+</ul>
+
+<ul>
+<li class="fragment appear">Lad os se, hvor meget vi kan tælle til ved at tælle binært med vores fingre. Bare følg mig!</li>
+
+</ul>
+</div>
+
+<div>
+
+<div id="org45fda30" class="figure">
+<p><img src="./img/counting_fingers_flintstones.gif" alt="counting_fingers_flintstones.gif" />
+</p>
+</div>
+</div>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" class="fragment (appear)">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2<sup>9</sup></td>
+<td class="org-left">2<sup>8</sup></td>
+<td class="org-left">2<sup>7</sup></td>
+<td class="org-left">2<sup>6</sup></td>
+<td class="org-left">2<sup>5</sup></td>
+<td class="org-left">2<sup>4</sup></td>
+<td class="org-left">2<sup>3</sup></td>
+<td class="org-left">2<sup>2</sup></td>
+<td class="org-left">2<sup>1</sup></td>
+<td class="org-left">2<sup>0</sup></td>
+</tr>
+
+<tr>
+<td class="org-left">512</td>
+<td class="org-left">256</td>
+<td class="org-left">128</td>
+<td class="org-left">64</td>
+<td class="org-left">32</td>
+<td class="org-left">16</td>
+<td class="org-left">8</td>
+<td class="org-left">4</td>
+<td class="org-left">2</td>
+<td class="org-left">1</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-org56bf274" data-background="">
+<h2 id="org56bf274">Opsummering</h2>
+<p>
+Addition med binære tal
+</p>
+
+<div style="font-size: 50%;">
+<div style="display: grid; grid-template-columns: auto auto;">
+<div>
+<ul>
+<li>Fulstændig som hverdagsaddition bare med <b>in mente</b> på 2 i stedet for 10 (ti).</li>
+<li>Decimal: 7 + 3 = 10 (Cifret længst til højre er 0 og der er 1 in mente.)</li>
+<li>Binary: 1 + 1 = 10 (Cifret længst til højre er 0 og der er 1 in mente.)</li>
+<li>More Binary:
+<ul>
+<li>0 + 0 = 0</li>
+<li>0 + 1 = 1</li>
+<li>1 + 0 = 1</li>
+<li>1 + 1 = 10</li>
+<li>10 + 1 = 11</li>
+<li>11 + 101 = 1000</li>
+
+</ul></li>
+<li>Generelt: Lige så snart I rammer et <b>multiplum</b> af 2, får I 1 in mente.</li>
+
+</ul>
+</div>
+
+<div>
+<ul>
+<li class="fragment appear">Lad os skrive noget på tavlen. Find på nogle binære tal, som vi kan lægge sammen.</li>
+<li class="fragment appear">Nu er det jeres tur. <b>Læg jeres fødselsdage fra tidligere sammen!</b></li>
+<li class="fragment appear">Tjek jeres svar her: <a href="https://www.calculator.net/binary-calculator.html">https://www.calculator.net/binary-calculator.html</a></li>
+
+</ul>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: false,
+slideNumber: 'c/t',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'slide',
+transitionSpeed: 'default',
+slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true,
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

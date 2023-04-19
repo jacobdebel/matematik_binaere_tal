@@ -1,0 +1,135 @@
+#+title: Binære tal
+#+subtitle: 
+#+author: 
+#+date: 
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background:
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+* Giver det mening?
+
+#+begin_quote
+Der findes 10 slags mennesker. Dem, der forstår binære tal, og dem, som ikke gør.
+#+end_quote
+
+#+attr_reveal: :frag (appear)
+- Giver citatet mening?
+- Hvad er der galt?
+- Diskutér det med din sidemakker.
+
+* Giver det mening? - For de indviede
+
+#+begin_quote
+Der findes 10 slags mennesker. Dem, der forstår binære tal, dem, der ikke gør og dem, som også forstår trinære tal.
+#+end_quote
+
+#+attr_reveal: :frag (appear)
+- Giver citatet mening?
+- Hvad er der galt?
+- Diskutér det med din sidemakker.
+
+  
+* Decimaltal (tital) vs binære tal
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div style="display: grid; grid-template-columns: 50% auto;">
+#+reveal_html: <div>
+*Decimaltal*
+
+Ti forskellige cifre:
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+|        |        |        |        |
+| 10^{3} | 10^{2} | 10^{1} | 10^{0} |
+|   1000 |    100 |     10 |      1 |
+#+reveal_html: </div>
+#+reveal_html: <div>
+*Binære tal*
+
+To forskellige cifre:
+
+0, 1
+
+|       |       |       |       |       |       |       |       |       |       |
+| 2^{9} | 2^{8} | 2^{7} | 2^{6} | 2^{5} | 2^{4} | 2^{3} | 2^{2} | 2^{1} | 2^{0} |
+|   512 |   256 |   128 |    64 |    32 |    16 |     8 |     4 |     2 |     1 |
+#+reveal_html: </div>
+#+reveal_html: </div>
+
+#+attr_reveal: :frag (appear)
+Lad os skrive nogle tal op!
+
+* Happy birthday!
+#+reveal_html: <div style="font-size: 70%;">
+Skriv jeres fødselsdato med binære tal... Ja, I skal skrive hele fødselsåret :)
+
+#+reveal_html: <div style="font-size: 70%;">
+Brug en tabel ligesom sidst
+
+|        |       |       |       |       |       |       |       |       |       |       |
+| 2^{10} | 2^{9} | 2^{8} | 2^{7} | 2^{6} | 2^{5} | 2^{4} | 2^{3} | 2^{2} | 2^{1} | 2^{0} |
+|   1024 |   512 |   256 |   128 |    64 |    32 |    16 |     8 |     4 |     2 |     1 |
+
+Eller en *algoritme*
+
+1. Dividér jeres decimaltal med 2 og skriv *kvotienten* og *resten* ned.
+
+   Resten er enten 0 eller 1.
+
+2. Dividér nu kvotienten fra forrige skridt med 2 og skriv den nye kvotient og *resten* ned igen. Skriv den nye rest *til venstre* for den gamle rest.
+
+3. Gentag de to første skridt indtil I har en ny kvotient på 0.
+
+4. Resterner er nu jeres decimaltal skrevet med binære tal. Husk at have den *første* rest længst til *højre* og den *sidste* rest længst til *venstre*.
+
+* Lad os tælle
+#+reveal_html: <div style="font-size: 80%;">
+#+reveal_html: <div style="display: grid; grid-template-columns: auto auto;">
+#+reveal_html: <div>
+- Hvor stort et tal kan I tælle til på én hånd?... eller to?
+
+#+attr_reveal: :frag (appear)
+- Lad os se, hvor meget vi kan tælle til ved at tælle binært med vores fingre. Bare følg mig!
+#+reveal_html: </div>
+
+#+reveal_html: <div>
+[[./img/counting_fingers_flintstones.gif]]
+#+reveal_html: </div>
+#+reveal_html: </div>
+
+#+attr_reveal: :frag (appear)
+|       |       |       |       |       |       |       |       |       |       |
+| 2^{9} | 2^{8} | 2^{7} | 2^{6} | 2^{5} | 2^{4} | 2^{3} | 2^{2} | 2^{1} | 2^{0} |
+|   512 |   256 |   128 |    64 |    32 |    16 |     8 |     4 |     2 |     1 |
+
+* Opsummering
+Addition med binære tal
+
+#+reveal_html: <div style="font-size: 50%;">
+#+reveal_html: <div style="display: grid; grid-template-columns: auto auto;">
+#+reveal_html: <div>
+- Fulstændig som hverdagsaddition bare med *in mente* på 2 i stedet for 10 (ti).
+- Decimal: 7 + 3 = 10 (Cifret længst til højre er 0 og der er 1 in mente.)
+- Binary: 1 + 1 = 10 (Cifret længst til højre er 0 og der er 1 in mente.)
+- More Binary:
+  - 0 + 0 = 0
+  - 0 + 1 = 1
+  - 1 + 0 = 1
+  - 1 + 1 = 10
+  - 10 + 1 = 11
+  - 11 + 101 = 1000
+- Generelt: Lige så snart I rammer et *multiplum* af 2, får I 1 in mente.
+#+reveal_html: </div>
+
+#+reveal_html: <div>
+#+attr_reveal: :frag (appear)
+- Lad os skrive noget på tavlen. Find på nogle binære tal, som vi kan lægge sammen.
+- Nu er det jeres tur. *Læg jeres fødselsdage fra tidligere sammen!*
+- Tjek jeres svar her: [[https://www.calculator.net/binary-calculator.html]]
+#+reveal_html: </div>
+#+reveal_html: </div>
